@@ -1,0 +1,62 @@
+﻿<Window x:Class="_10._12._2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10._12._2023"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Background="Aqua">
+            <Button Visibility="Collapsed" Content="Панель Collapsed"/>
+            <Button Height="20" Content="Visible Button"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Background="LightBlue">
+            <Button Visibility="Hidden" Content="Панель Hidden"/>
+            <Button Height="20" Content="Visible Button"/>
+        </StackPanel>-->
+        <!--<StackPanel>
+            <TextBlock FlowDirection="RightToLeft">RightToLeft</TextBlock>
+            <TextBlock FlowDirection="LeftToRight">LeftToRight</TextBlock>
+        </StackPanel>-->
+        <StackPanel x:Name="stackPanel">
+            <!--<Button x:Name="acceptButton" Content="OK" IsDefault="True" Click="acceptButton_Click"/>
+            <Button x:Name="escButton" Content="Выход" IsCancel="True" Click="escButton_Click"/>-->
+            <!--<CheckBox x:Name="CheckBox1" IsThreeState="True" IsChecked="False"  Height="20" Content="Неотмечено"/>
+            <CheckBox x:Name="CheckBox2" IsThreeState="True" IsChecked="True" Height="20" Content="Отмечено"/>
+            <CheckBox x:Name="CheckBox3" IsThreeState="True" IsChecked="{x:Null}" Height="20" Content="Неопределено"/>-->
+            <!--<RadioButton GroupName="Languages" Content="C#" IsChecked="True" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="Languages" Content="C++" Checked="RadioButton_Checked" />
+            <RadioButton GroupName="Languages" Content="C" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="Technologies" Content="WPF" IsChecked="True" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="Technologies" Content="WinAPI" Checked="RadioButton_Checked" />
+            <RadioButton GroupName="Technologies" Content="ADO.Net" Checked="RadioButton_Checked"/>-->
+            <RadioButton GroupName="Phones" Content="IPhone 14">
+                <RadioButton.ToolTip>
+                    <ToolTip Background="#60AA4030" Foreground="White" HasDropShadow="False" Placement="Relative" 
+                             HorizontalOffset="15" VerticalOffset="10">
+                        <StackPanel>
+                            <TextBlock>Цена:</TextBlock>
+                            <TextBlock>ДНС 250000</TextBlock>
+                            <TextBlock>МВидео 249950</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </RadioButton.ToolTip>
+            </RadioButton>
+            <RadioButton GroupName="Phones" ToolTipService.Placement="Mouse" ToolTip="Цена 90000" Content="Huawei P60Pro"/>
+            <RadioButton GroupName="Phones" ToolTip="Цена 40000" Content="Xiaomi 12Lite"/>
+        </StackPanel>
+    </Grid>
+</Window>
+<!--Шрифты
+    FontFamily - определяет семейство шрифта (Aria, Verdana и т.д.)
+    FontSize - определяет высоту шрифта
+    FontStyle - Normal/Italic/Oblique
+    FontWeight - толщина шрифта и ряд других значений, как Black, Bold и др.
+    FontStretch - растяжение текста, значение Condensed сжимает текст, Expanded - расстягивает.
+    -->
+    
